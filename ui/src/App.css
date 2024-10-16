@@ -1,0 +1,101 @@
+.App {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: 480px) {
+    flex-direction: column;
+    grid-row-gap: 50px;
+    margin-bottom: 50px;
+  }
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+    grid-row-gap: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+}
+.contact-wrapper, form {
+  box-sizing: border-box;
+  width: 300px;
+  border: 1px solid gray;
+  margin: 10px;
+
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+    border: none;
+    margin: 0;
+  }
+}
+.contact {
+  padding: 20px 40px;
+}
+.top {
+  text-align: center;
+}
+.top, .bottom {
+  background-color: rgb(252, 221, 226);
+}
+.middle {
+  background-color: rgb(230, 240, 250);
+}
+.timing, .availability {
+  font-size: 0.8rem;
+  margin-block-start: 0;
+}
+h6 {
+  margin-block-start: 1em;
+  margin-block-end: 0;
+  font-size: 0.8rem;
+}
+.special-hours {
+  color: red;
+}
+.call span, .text span, .chat span, .email span {
+  font-weight: bold;
+  color: gray;
+}
+.call p, .text p, .chat p, .email p {
+  margin-block-end: 0;
+}
+.call span, .text span {
+  margin-right: 0.5rem;
+}
+.email span {
+  color: rgb(123, 152, 247)
+}
+.indicator {
+  display: inline-flex;
+  height: 8px;
+  width: 8px;
+  background-color: #aaa;
+  border-radius: 100px;
+  margin-right: 0.5rem;
+}
+.email .indicator {
+  background-color: rgb(92, 190, 92);
+}
+/* ####################### */
+/* FORM */
+/* ######################## */
+
+form {
+  background-color: rgb(230, 240, 250);
+  height: 100%;
+  padding: 20px;
+}
+label {
+  margin-right: 1rem;
+  display: inline-flex;
+  min-width: 80px;
+}
+.start, .end {
+  margin-top: 1rem;
+}
+button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+input {
+  padding: 0.5rem;
+}
