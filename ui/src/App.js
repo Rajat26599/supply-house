@@ -23,6 +23,7 @@ function App() {
           <h3>Questions?</h3>
           <p>Our Customer Support will be opening late today. We apologize for any inconvenience.</p>
         </div>
+        
         <div className='contact middle'>
           <div className='call'>
             <p>
@@ -63,7 +64,9 @@ function App() {
             </p>
           </div>
         </div>
+        
         <div className='contact bottom'>
+          {/* special hours details */}
           <div className='special-hours'>
             <h6>Special Hours</h6>
             <p className='timing'>{specialHours ? specialHours : "8:45am-7:45pm"}</p>
@@ -86,6 +89,8 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* form for updating the special hours for a particular date */}
       <form>
         <h2>Set Special Hours</h2>
         <div className='date'>
